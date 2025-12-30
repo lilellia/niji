@@ -39,3 +39,18 @@ dev = [
 include = [
     "niji",
 ]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["I001"]
+
+[tool.ruff.isort]
+known-local-folder = ["niji"]
+force-single-line = false
+lines-after-imports = 1
+force-sort-within-sections = true
+order-by-type = false
